@@ -1,1 +1,1 @@
-<h1>site portfolio pour CaptainSnood</h1>
+<h1 align="center">site portfolio pour CaptainSnood</h1>
