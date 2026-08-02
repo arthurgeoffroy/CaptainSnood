@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+			/* css général */
+			body {
+				font-family: "Poppins";
+				font-style: normal;
+				color: #f6f5f8;
+				margin: 0px;
+				background-color: rgba(61, 59, 64, 1);
+			}
+			a {
+				text-decoration: none;
+				color: #f6f5f8;
+			}
+			header {
+				margin: 0;
+				top: 0;
+				padding: 0;
+				width: 100%;
+				height: 100px;
+				position: fixed;
+				z-index: 1;
+				display: flex;
+				background-color: rgba(69, 66, 74, 0.95);
+				box-shadow: 0px 2px 2px rgba(41, 39, 44, 0.7);
+			}
+			header img {
+				float: left;
+				width: 109px;
+				height: 100px;
+				padding-left: 47px;
+			}
+			header ul {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 156px;
+				font-size: 22px;
+			}
+			ul li {
+				list-style-type: none;
+			}	
+			header ul li a {
+				font-weight: 600;
+				color: #f6f5f8;
+				display: block;
+				padding: 0px 40px;
+			}
+			ul li a:hover {
+				color: #ab66ff;
+			}
+			footer {
+				height: 400px;
+				width: 100%;
+				background-color: rgba(69, 66, 74, 1);
+				display: flex;
+			}
+			#logo1 {
+				position: absolute;
+				width: 21%;
+			}
+			#logo2 img {
+				position: relative;
+				top: 250px;
+				left: 55px;
+				width: 100px;
+				height: 91.8px;
+			}
+			#propose {
+				padding: 0px;
+				margin: auto;
+				width: 500px;
+			}
+			#liens {
+				position: relative;
+				width: 300px;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 0px;
+				float: right;
+			}
+			#liens li {
+				padding-top: 40px;
+			}
+			
+			/* page d'accueil */
+			
+			#logo0 {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#demoreel {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				}
+			#creations {
+				position: relative;
+				z-index: 0;
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				justify-items: center;
+				padding: 50px 0px 50px 0px;
+				margin-bottom: 50px;
+				margin-top: 0px;
+				background-color: rgba(51, 48, 56, 1);
+				box-shadow: 0px 15px 15px 5px rgba(0, 0, 0, 0.25);
+				grid:
+					'titrecrea titrecrea'
+					'crea1 crea2'
+					'voir-plus crea3'
+			}
+			#titrecrea {
+				text-align: center;
+				width: 100%;
+				grid-area: titrecrea;
+			}
+			#crea1 {
+				grid-area: crea1;
+				margin: 10px;
+				position: relative;
+				top: 10px;
+			}
+			#crea2 {
+				grid-area: crea2;
+			}
+			#voir-plus {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: auto;
+				background-color: rgba(93, 87, 93, 1);
+				width: 300px;
+				height: 150px;
+				grid-area: voir-plus;
+			}
+			#crea3 {
+				grid-area: crea3;
+				position: relative;
+				bottom: 10px;
+			}
+			#photographies {
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				justify-items: center;
+				padding: 50px 0px 50px 0px;
+				margin-bottom: 50px;
+				margin-top: 0px;
+				grid:
+					'titrephoto titrephoto'
+					'photo1 photo2'
+					'photo3 voir-plus'
+			}
+			#titrephoto {
+				grid-area: titrephoto;
+				text-align: center;
+				width: 100%;
+			}
+			#photo1 {
+				grid-area: photo1;
+				margin: 10px;
+			}
+			#photo2 {
+				grid-area: photo2;
+			}
+			#photo3 {
+				grid-area: photo3;
+			}
+			#en-bref {					
+				display: flex;
+				justify-content: center;
+				padding: 50px 0px 50px 0px;
+				margin-bottom: 50px;
+				flex-wrap: wrap;
+				background-color: rgba(51, 48, 56, 1);
+				box-shadow: 0px 15px 15px 5px rgba(0, 0, 0, 0.25);
+			}
+			#trombi {
+				margin-right: 20px;
+				height:355px;
+			}
+			#breftitre {
+				width: 100%;
+				text-align: center;
+			}
+			#breftext {
+				display: flex;
+				flex-wrap: wrap;
+				width: 600px;
+				height: 355px;
+				padding: 0px;
+			}
+			#aka {
+				padding: 0px 20px 0px 20px;
+				margin-bottom: 20px;
+				background-color: rgba(125, 76, 254, 1);
+			}
+			#pasletemps {
+				width: 200px;
+				height: 150px;
+				padding: 0px 20px 20px 20px;
+				margin-right: 20px;
+				background-color: rgba(174, 136, 255, 1);
+			}
+			#cv {
+				width: 300px;
+				height: 170px;
+				background: rgba(116, 115, 254, 1);
+				padding: 0px 20px 0px 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#collabtitre {
+				width: 100%;
+				text-align: center;
+			}
+			#colab {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				padding: 50px 0px 50px 0px;
+				margin: 0px;
+			}
+			#datwitch {
+				width: 355px;
+				margin-right: 20px;
+			}
+			#propose1 {
+				display: flex;
+				flex-wrap: wrap;
+				width: 600px;
+				height: 355px;
+				padding: 0px;
+			}
+			#propose2 {
+				background-color: rgba(241, 117, 82, 1);
+				padding: 0px 20px 0px 20px;
+				margin-bottom: 20px;
+			}
+			#inter {
+				width: 280px;
+				background-color: rgba(134, 52, 74, 1);
+				padding: 0px 20px 0px 20px;
+				margin-right: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#contact {
+				width: 220px;
+				background-color: rgba(253, 105, 105, 1);
+				padding: 0px 20px 0px 20px;
+				align-items: center;
+			}
+
+			/*page création*/
+		
+			#logo3 {
+				width: 400px;
+			}
+			
+			#entete {
+				background-color: rgba(51, 48, 56, 1);
+				margin: 100px 0px 0px 0px;
+				padding: 0px;
+				height: 265px;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-content: center;
+				justify-content: center;
+			}
+			#Creations {
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				justify-items: center;
+				padding: 50px 0px 50px 0px;
+				margin-bottom: 50px;
+				margin-top: 0px;
+				column-gap: 200px;
+				grid:
+					'crea1 crea2'
+					'crea3 crea4'
+					'crea5 crea6'
+					'crea7 crea8'
+			}
+			#creation img {
+				padding: 10px;
+			}
+			#Creations #carr:hover {
+				transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+				background-color: rgba(51, 48, 56, 1);
+				box-shadow: 15px 15px 15px 5px rgba(0, 0, 0, 0.25);
+				transform: scale(1.5, 1.5);
+			}
+			#carr h1 {
+				display: none;
+			}
+			#carr p {
+				display: none;
+			}
+			#carr h3 {
+				display: none;
+			}
+			#carr:hover h1 {
+				display: block;
+			}
+			#carr:hover p {
+				display: block;
+				width: 300px;
+			}
+			#carr:hover h3 {
+				display: block;
+			}
+			#carr {
+				padding: 0px;
+				display: grid;
+				grid-template-areas: 'img descr';
+			}
+			#description {
+				grid-area: descr;
+				margin-left: 10px;
+			}
+			#flechegau {
+				display: none;
+			}
+			#flechedroi {
+				display: none;
+				position: relative;
+				bottom: 50px;
+				right: 50px;
+			}
+			#carr:hover #flechegau{
+				display: block;
+				position: relative;
+				bottom: 50px;
+			}
+			#carr:hover #flechedroi{
+				display: block;
+			}
+			#crea1 { grid-area: crea1; }
+			#crea2 { grid-area: crea2; }
+			#crea3 { grid-area: crea3; }
+			#crea4 { grid-area: crea4; }
+			#crea5 { grid-area: crea5; }
+			#crea6 { grid-area: crea6; }
+			#crea7 { grid-area: crea7; }
+			#crea8 { grid-area: crea8; }
+			
+			/*page photo*/
+			
+			/* page contact */
