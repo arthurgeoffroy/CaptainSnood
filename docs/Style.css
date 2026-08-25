@@ -96,6 +96,8 @@
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
+				width: 85%;
+				height: 750px;
 				}
 			#creations {
 				position: relative;
