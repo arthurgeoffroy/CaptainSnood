@@ -57,7 +57,7 @@
 							let currentImage = document.getElementById("images1");
 							let currentIndex = images.indexOf(currentImage);
 							let newIndex = (currentIndex + direction + images.length) % images.length;
-							document.getElementById("images1").src = images[newIndex];
+							return document.getElementById("images1").src = images[newIndex];
 						}
 					</script>
 				</ul>
