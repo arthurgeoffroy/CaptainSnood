@@ -35,7 +35,7 @@
 		<ul id="Creations">
 			<li id="crea1">
 				<ul id="carr">
-					<li><img id="images1" width="500px" src="portfolio\creations\1-spitly\spitly-mockup.jpg"></li>
+					<li><img id="images1" src="portfolio\creations\1-spitly\spitly-mockup.jpg" width="500px"></li>
 					<img id="flechegau" width="50px" src="portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" onclick="changeImage(-1)">
 					<img id="flechedroi" width="50px" src="portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" onclick="changeImage(1)">
 					<li id="description">
@@ -56,10 +56,11 @@
 								"portfolio/creations/1-spitly/spitly5.png"
 							];
 							let currentImage = document.getElementById("images1");
-							let currentIndex = images.indexOf(currentImage);
+							let currentIndex = images.indexOf(currentImage) + 1;
 							let newIndex = (currentIndex + direction + images.length) % images.length;
-							return document.getElementById("images1").src = images[newIndex];
+							document.getElementById("images1").innerHTML = images[newIndex];
 						}
+							
 					</script>
 				</ul>
 			</li>
