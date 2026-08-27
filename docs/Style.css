@@ -85,8 +85,18 @@
 				padding-top: 40px;
 			}
 			
+
+
+
+
+
 			/* page d'accueil */
 			
+
+
+
+
+
 			#logo0 {
 				display: block;
 				margin-left: auto;
@@ -261,8 +271,18 @@
 				align-items: center;
 			}
 
+
+
+
+
+
 			/*page création*/
 		
+
+
+
+
+
 			#logo3 {
 				width: 400px;
 			}
@@ -293,7 +313,16 @@
 					'crea5 crea6'
 					'crea7 crea8'
 			}
+						#crea1 { grid-area: crea1; }
+			#crea2 { grid-area: crea2; }
+			#crea3 { grid-area: crea3; }
+			#crea4 { grid-area: crea4; }
+			#crea5 { grid-area: crea5; }
+			#crea6 { grid-area: crea6; }
+			#crea7 { grid-area: crea7; }
+			#crea8 { grid-area: crea8; }
 			#creation img {
+
 				padding: 10px;
 			}
 			#Creations #carr:hover {
@@ -333,6 +362,8 @@
 			#flechegau {
 				display: none;
 				z-index: 1;
+				position: relative;
+				bottom: 50px;
 			}
 			#flechedroi {
 				display: none;
@@ -343,21 +374,22 @@
 			}
 			#carr:hover #flechegau{
 				display: block;
-				position: relative;
-				bottom: 50px;
 			}
 			#carr:hover #flechedroi{
 				display: block;
 			}
-			#crea1 { grid-area: crea1; }
-			#crea2 { grid-area: crea2; }
-			#crea3 { grid-area: crea3; }
-			#crea4 { grid-area: crea4; }
-			#crea5 { grid-area: crea5; }
-			#crea6 { grid-area: crea6; }
-			#crea7 { grid-area: crea7; }
-			#crea8 { grid-area: crea8; }
-			
+			#flechedroiV {
+				display: none;
+			}
+			#flechegauV {
+				display: none;
+			}
+			#flechedroi:hover #flechedroiV{
+				display: inline;
+			}
+			#flechegau:hover #flechegauV{
+				display: inline;
+			}
 			/*page photo*/
 			
 			/* page contact */
