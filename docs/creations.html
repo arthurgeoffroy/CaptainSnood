@@ -40,25 +40,30 @@
 					<img id="flechedroi" width="50px" src="portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" onclick="changeImage(1)">
 					<li id="description">
 						<h1> Spitly </h1>
-						<p>date du projet</p>
+						<p id="currentimage"></p>
+						<p id="currentindex"></p>
+						<p id="newindex"></p>
 						<h3>format du projet</h3>
 						<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
 					</li>
 					<script>
 						// script carrousel
 						function changeImage(direction) {
-							const images = [
-								"portfolio/creations/1-spitly/spitly-mockup.jpg",
-								"portfolio/creations/1-spitly/spitly1.png",
-								"portfolio/creations/1-spitly/spitly2.png",
-								"portfolio/creations/1-spitly/spitly3.png",
-								"portfolio/creations/1-spitly/spitly4.png",
-								"portfolio/creations/1-spitly/spitly5.png"
-							];
-							let currentImage = document.getElementById("images1");
-							let currentIndex = images.indexOf(currentImage) + 1;
+							const images = [];
+								images[0]= "file:///c%3A/Users/Geoffroy/Documents/GitHub/CaptainSnood/docs/portfolio/creations/1-spitly/spitly-mockup.jpg";
+								images[1]= "file:///c%3A/Users/Geoffroy/Documents/GitHub/CaptainSnood/docs/portfolio/creations/1-spitly/spitly1.png";
+								images[2]= "file:///c%3A/Users/Geoffroy/Documents/GitHub/CaptainSnood/docs/portfolio/creations/1-spitly/spitly2.png";
+								images[3]= "file:///c%3A/Users/Geoffroy/Documents/GitHub/CaptainSnood/docs/portfolio/creations/1-spitly/spitly3.png";
+								images[4]= "file:///c%3A/Users/Geoffroy/Documents/GitHub/CaptainSnood/docs/portfolio/creations/1-spitly/spitly4.png";
+								images[5]= "file:///c%3A/Users/Geoffroy/Documents/GitHub/CaptainSnood/docs/portfolio/creations/1-spitly/spitly5.png";
+							
+							let currentImage = document.getElementById("images1").src;
+							let currentIndex = images.indexOf(currentImage);
 							let newIndex = (currentIndex + direction + images.length) % images.length;
-							document.getElementById("images1").innerHTML = images[newIndex];
+							document.getElementById("images1").src = images[newIndex];
+							document.getElementById("currentimage").innerHTML = currentImage;
+							document.getElementById("currentindex").innerHTML = images.indexOf(currentImage);
+							document.getElementById("newindex").innerHTML = newIndex;
 						}
 							
 					</script>
