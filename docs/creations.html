@@ -49,14 +49,13 @@
 					<script>
 						// script carrousel
 						function changeImage(direction) {
-							const images = [];
-								images[0]= "https://snood-design.com/portfolio/creations/1-spitly/spitly-mockup.jpg";
-								images[1]= "https://snood-design.com/portfolio/creations/1-spitly/spitly1.png";
-								images[2]= "https://snood-design.com/portfolio/creations/1-spitly/spitly2.png";
-								images[3]= "https://snood-design.com/portfolio/creations/1-spitly/spitly3.png";
-								images[4]= "https://snood-design.com/portfolio/creations/1-spitly/spitly4.png";
-								images[5]= "https://snood-design.com/portfolio/creations/1-spitly/spitly5.png";
-							
+							const images = ["https://snood-design.com/portfolio/creations/1-spitly/spitly-mockup.jpg",
+											"https://snood-design.com/portfolio/creations/1-spitly/spitly1.png",
+											"https://snood-design.com/portfolio/creations/1-spitly/spitly2.png",
+											"https://snood-design.com/portfolio/creations/1-spitly/spitly3.png",
+											"https://snood-design.com/portfolio/creations/1-spitly/spitly4.png",
+											"https://snood-design.com/portfolio/creations/1-spitly/spitly5.png"
+							];
 							let currentImage = document.getElementById("images1").src;
 							let currentIndex = images.indexOf(currentImage);
 							let newIndex = (currentIndex + direction + images.length) % images.length;
