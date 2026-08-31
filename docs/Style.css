@@ -385,10 +385,10 @@
 				display: none;
 			}
 			#flechedroi:hover #flechedroiV{
-				display: inline;
+				display: block;
 			}
 			#flechegau:hover #flechegauV{
-				display: inline;
+				display: block;
 			}
 			/*page photo*/
 			
