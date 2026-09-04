@@ -378,18 +378,7 @@
 			#carr:hover #flechedroi{
 				display: block;
 			}
-			#flechedroiV {
-				display: none;
-			}
-			#flechegauV {
-				display: none;
-			}
-			#flechedroi:hover #flechedroiV{
-				display: block;
-			}
-			#flechegau:hover #flechegauV{
-				display: block;
-			}
+			
 			/*page photo*/
 			
 			/* page contact */

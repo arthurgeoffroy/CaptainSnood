@@ -36,8 +36,6 @@
 			<li id="crea1">
 				<ul id="carr">
 					<li><img id="images1" src="https://snood-design.com/portfolio\creations\1-spitly\spitly-mockup.jpg" width="500px"></li>
-					<img id="flechegauV" width="50px" src="portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-violet.png">
-					<img id="flechedroiV" width="50px" src="portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-violet.png">
 					<img id="flechegau" width="50px" src="portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" onclick="changeImage(-1)">
 					<img id="flechedroi" width="50px" src="portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" onclick="changeImage(1)">
 					<li id="description">
@@ -61,7 +59,11 @@
 							let newIndex = (currentIndex + direction + images.length) % images.length;
 							document.getElementById("images1").src = images[newIndex];
 						}
+						//script changement couleur des fleches
+						function changefleche(){
 
+
+						}
 					</script>
 				</ul>
 			</li>
