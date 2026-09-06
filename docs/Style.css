@@ -5,8 +5,9 @@
 				font-style: normal;
 				color: #f6f5f8;
 				margin: 0px;
-				border-left: 100px solid rgba(0, 0, 0, 0.25);
-				border-right: 100px solid rgba(0, 0, 0, 0.25);
+				border-width: 0px 100px;
+				border-color: rgba(0, 0, 0, 0.25);
+				border-style: solid;
 				background-color: rgba(61, 59, 64, 1);
 			}
 			a {
@@ -316,7 +317,7 @@
 					'crea5 crea6'
 					'crea7 crea8'
 			}
-						#crea1 { grid-area: crea1; }
+			#crea1 { grid-area: crea1; }
 			#crea2 { grid-area: crea2; }
 			#crea3 { grid-area: crea3; }
 			#crea4 { grid-area: crea4; }
@@ -325,8 +326,10 @@
 			#crea7 { grid-area: crea7; }
 			#crea8 { grid-area: crea8; }
 			#creation img {
-
 				padding: 10px;
+			}
+			#images1 {
+				object-fit: contain;
 			}
 			#Creations #carr:hover {
 				transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
@@ -365,15 +368,16 @@
 			#flechegau {
 				display: none;
 				z-index: 1;
-				position: relative;
-				bottom: 50px;
+				position: absolute;
+				bottom: 0px;
+				left: 1px;
 			}
 			#flechedroi {
 				display: none;
 				z-index: 1;
-				position: relative;
-				bottom: 50px;
-				right: 50px;
+				position: absolute;
+				bottom: 0px;
+				left: 444px;
 			}
 			#carr:hover #flechegau{
 				display: block;
