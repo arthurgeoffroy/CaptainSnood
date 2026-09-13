@@ -55,7 +55,7 @@
 			}
 			footer {
 				height: 400px;
-				width: 100%;
+				margin: 0px;
 				background-color: rgba(69, 66, 74, 1);
 				display: flex;
 			}
