@@ -52,20 +52,21 @@
 					</li>
 					<script>
 						// script carrousel
-						const images = [
+						const images1 = [
 										"https://snood-design.com/portfolio/creations/23-da-twitch/DA_TWITCH_FIXE_DA_TWITCH_LOGO.jpg",
 										"https://snood-design.com/portfolio/creations/23-da-twitch/Emojis_captainood_Angry_boi.png",
 										"https://snood-design.com/portfolio/creations/23-da-twitch/Emojis_captainood_Happy_boi.png",
+										"https://snood-design.com/portfolio/creations/23-da-twitch/Emojis_captainood_Cry_boi.png",
 						];
 						function changeImage(direction) {
 							let currentImage = document.getElementById("images1").src;
-							let currentIndex = images.indexOf(currentImage);
-							let newIndex = (currentIndex + direction + images.length) % images.length;
-							document.getElementById("images1").src = images[newIndex];
+							let currentIndex = images1.indexOf(currentImage);
+							let newIndex = (currentIndex + direction + images1.length) % images1.length;
+							document.getElementById("images1").src = images1[newIndex];
 						}	
 						// reset image
 						function resetimage(){
-							document.getElementById("images1").src = images[0];
+							document.getElementById("images1").src = images1[0];
 						}
 					</script>
 				</ul>
@@ -75,7 +76,39 @@
 
 			<li id="crea2">
 				<ul id="carr">
-					<img width="500px" src="portfolio\creations\2-lac-de-la-gimone\poste-saisonnier.png">
+					<ul id="carr" onmouseleave="resetimage(1)">
+					<li><img id="images2" src="https://snood-design.com/docs/portfolio/creations/21-illustration-field-cat/bori-in-field.jpeg" width="500px" height="500px"></li>
+					<img id="flechegau" width="50px" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
+					onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
+					onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-banc.png'" 
+					onclick="changeImage(-1)">
+					<img id="flechedroi" width="50px" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
+					onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-violet.png'" 
+					onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-blanc.png'" 
+					onclick="changeImage(1)">
+					<li id="description">
+						<h1> Page Twitch </h1>
+						<p id="p">date du projet</p>
+						<h3>format du projet</h3>
+						<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
+					</li>
+					<script>
+						// script carrousel
+						const images2 = [
+										"https://snood-design.com/docs/portfolio/creations/21-illustration-field-cat/bori-in-field.jpeg",
+										"https://snood-design.com/docs/portfolio/creations/21-illustration-field-cat/bori.jpeg",
+						];
+						function changeImage(direction) {
+							let currentImage = document.getElementById("images2").src;
+							let currentIndex = images2.indexOf(currentImage);
+							let newIndex = (currentIndex + direction + images2.length) % images2.length;
+							document.getElementById("images2").src = images2[newIndex];
+						}	
+						// reset image
+						function resetimage(){
+							document.getElementById("images2").src = images[0];
+						}
+					</script>
 				</ul>
 			</li>
 		</ul>
