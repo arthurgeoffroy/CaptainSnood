@@ -312,10 +312,18 @@
 				margin-top: 0px;
 				column-gap: 200px;
 				grid:
-					'crea1 crea2'
-					'crea3 crea4'
-					'crea5 crea6'
-					'crea7 crea8'
+					'crea23 crea22'
+					'crea21 crea20'
+					'crea19 crea18'
+					'crea17 crea16'
+					'crea15 crea14'
+					'crea13 crea12'
+					'crea11 crea10'
+					'crea9 crea8'
+					'crea7 crea6'
+					'crea5 crea4'
+					'crea3 crea2'
+					'crea1 .'
 			}
 			#crea1 { grid-area: crea1; }
 			#crea2 { grid-area: crea2; }
@@ -325,11 +333,26 @@
 			#crea6 { grid-area: crea6; }
 			#crea7 { grid-area: crea7; }
 			#crea8 { grid-area: crea8; }
-			#creation img {
-				padding: 10px;
-			}
-			#images1 {
+			#crea9 { grid-area: crea9; }
+			#crea10 { grid-area: crea10; }
+			#crea11 { grid-area: crea11; }
+			#crea12 { grid-area: crea12; }
+			#crea13 { grid-area: crea13; }
+			#crea14 { grid-area: crea14; }
+			#crea15 { grid-area: crea15; }
+			#crea16 { grid-area: crea16; }
+			#crea17 { grid-area: crea17; }
+			#crea18 { grid-area: crea18; }
+			#crea19 { grid-area: crea19; }
+			#crea20 { grid-area: crea20; }
+			#crea21 { grid-area: crea21; }
+			#crea22 { grid-area: crea22; }
+			#crea23 { grid-area: crea23; }
+
+			#carr li img {
 				object-fit: contain;
+				width: 500px;
+				height: 500px;
 			}
 			#Creations #carr:hover {
 				transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
@@ -386,6 +409,12 @@
 				display: block;
 			}
 			
+
+
 			/*page photo*/
 			
+
+
 			/* page contact */
+
+
