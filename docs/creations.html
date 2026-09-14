@@ -40,12 +40,12 @@
 						<li><img id="images23"
 						src="https://snood-design.com/portfolio/creations/23-da-twitch/DA_TWITCH_FIXE_DA_TWITCH_LOGO.jpg"></li>
 
-						<img id="flechegau" width="50px" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
+						<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
 						onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
 						onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-banc.png'" 
 						onclick="changeImage23(-1)">
 
-						<img id="flechedroi" width="50px" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
+						<img id="flechedroi" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
 						onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-violet.png'" 
 						onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-blanc.png'" 
 						onclick="changeImage23(1)">
@@ -79,7 +79,78 @@
 					</ul>
 				</li>
 			
+				<li id="crea22">
+					<ul id="carr">
 
+						<li><img id="images22"
+						src="https://snood-design.com/portfolio/creations/22-logo-ivendire/Logo-ivendire-logo-streaming-ivendire.jpg"></li>
+
+						<li id="description">
+							<h1> Logo Ivendire </h1>
+							<p>date du projet</p>
+							<h3>format du projet</h3>
+							<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
+						</li>
+					</ul>
+				</li>
+
+				<li id="crea21">
+					<ul id="carr" onmouseleave="resetimage21(1)">
+
+						<li><img id="images21"
+						src="https://snood-design.com/portfolio/creations/21-illustration-field-cat/bori-in-field.jpeg"></li>
+
+						<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
+						onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
+						onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-banc.png'" 
+						onclick="changeImage21(-1)">
+
+						<img id="flechedroi" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
+						onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-violet.png'" 
+						onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-blanc.png'" 
+						onclick="changeImage21(1)">
+
+						<li id="description">
+							<h1> Bori </h1>
+							<p>date du projet</p>
+							<h3>format du projet</h3>
+							<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
+						</li>
+
+						<script>
+							// script carrousel
+							const images21 = [
+										"https://snood-design.com/portfolio/creations/21-illustration-field-cat/bori-in-field.jpeg",
+										"https://snood-design.com/portfolio/creations/21-illustration-field-cat/bori.jpeg"
+							];
+							function changeImage21(direction) {
+								let currentImage = document.getElementById("images21").src;
+								let currentIndex = images21.indexOf(currentImage);
+								let newIndex = (currentIndex + direction + images21.length) % images21.length;
+								document.getElementById("images21").src = images21[newIndex];
+							}	
+							// reset image
+							function resetimage21(){
+								document.getElementById("images21").src = images21[0];
+							}
+						</script>
+					</ul>
+				</li>
+
+				<li id="crea20">
+					<ul id="carr">
+
+						<li><img id="images20"
+						src="https://snood-design.com\portfolio\creations\20-illustration-patineur\patineur.png"></li>
+
+						<li id="description">
+							<h1> Patineur </h1>
+							<p>date du projet</p>
+							<h3>format du projet</h3>
+							<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
+						</li>
+					</ul>
+				</li>
 
 				<li id="crea19">
 						<ul id="carr" onmouseleave="resetimage19(1)">
@@ -87,12 +158,12 @@
 							<li><img id="images19" 
 							src="https://snood-design.com/portfolio/creations/19-illustration-plage/moi-plage.png" ></li>
 
-							<img id="flechegau" width="50px" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
+							<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
 							onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
 							onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-banc.png'" 
 							onclick="changeImage19(-1)">
 
-							<img id="flechedroi" width="50px" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
+							<img id="flechedroi" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
 							onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-violet.png'" 
 							onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-blanc.png'" 
 							onclick="changeImage19(1)">
@@ -123,6 +194,55 @@
 							</script>
 						</ul>
 				</li>
+
+				<li id="crea18">
+					<ul id="carr" onmouseleave="resetimage18(1)">
+
+						<li>
+							<video autoplay loop muted>
+							<source id="images18" src="https://snood-design.com/portfolio/creations/18-sculptsense/sculptsense-arches-loop-x2.mp4" type="video/mp4">
+							</video>
+						</li>
+
+						<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
+						onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
+						onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-banc.png'" 
+						onclick="changeImage18(-1)">
+
+						<img id="flechedroi" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
+						onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-violet.png'" 
+						onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-blanc.png'" 
+						onclick="changeImage18(1)">
+
+						<li id="description">
+							<h1> Sculpsense </h1>
+							<p>date du projet</p>
+							<h3>format du projet</h3>
+							<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
+						</li>
+
+						<script>
+							// script carrousel
+							const images18 = [
+										"https://snood-design.com/portfolio/creations/18-sculptsense/sculptsense-arches-loop-x2.mp4",
+										"https://snood-design.com/portfolio/creations/18-sculptsense/sculptsense-plume-de-paon-loop-x2.mp4"
+							];
+							function changeImage18(direction) {
+								let currentImage = document.getElementById("images18").src;
+								let currentIndex = images18.indexOf(currentImage);
+								let newIndex = (currentIndex + direction + images18.length) % images18.length;
+								document.getElementById("images18").src = images18[newIndex];
+							}	
+							// reset image
+							function resetimage18(){
+								document.getElementById("images18").src = images18[0];
+							}
+						</script>
+					</ul>
+				</li>
+
+
+
 			</ul>
 
 			<!-- bas de page -->
