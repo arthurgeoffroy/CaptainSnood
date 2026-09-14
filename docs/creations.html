@@ -199,7 +199,7 @@
 					<ul id="carr" onmouseleave="resetimage18(1)">
 
 						<li>
-							<video autoplay loop muted>
+							<video id="video18" autoplay loop muted>
 							<source id="images18" src="https://snood-design.com/portfolio/creations/18-sculptsense/sculptsense-arches-loop-x2.mp4" type="video/mp4">
 							</video>
 						</li>
@@ -232,6 +232,7 @@
 								let currentIndex = images18.indexOf(currentImage);
 								let newIndex = (currentIndex + direction + images18.length) % images18.length;
 								document.getElementById("images18").src = images18[newIndex];
+								document.getElementById("video18").load();
 							}	
 							// reset image
 							function resetimage18(){
@@ -241,7 +242,23 @@
 					</ul>
 				</li>
 
+				<li id="crea17">
+					<ul id="carr">
 
+						<li>
+							<video autoplay muted loop id="images17">
+								<source src="https://snood-design.com/portfolio/creations/17-walking-cat-sunset/walking-cat-sunset-music.mp4" type="video/mp4">	
+							</video>
+						</li>
+
+						<li id="description">
+							<h1> walking cat </h1>
+							<p>date du projet</p>
+							<h3>format du projet</h3>
+							<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
+						</li>
+					</ul>
+				</li>
 
 			</ul>
 
