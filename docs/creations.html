@@ -260,6 +260,52 @@
 					</ul>
 				</li>
 
+				<li id="crea16">
+						<ul id="carr" onmouseleave="resetimage16(1)" onload="chargeimages16(1)">
+
+							<li><img id="images16" 
+							src="https://snood-design.com/portfolio/creations/16-mind-it/affiche1.jpg" ></li>
+
+							<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
+							onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
+							onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-banc.png'" 
+							onclick="changeImage16(-1)">
+
+							<img id="flechedroi" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
+							onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-violet.png'" 
+							onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-blanc.png'" 
+							onclick="changeImage16(1)">
+
+							<li id="description">
+								<h1> Mind It </h1>
+								<p>date du projet</p>
+								<h3>format du projet</h3>
+								<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
+							</li>
+
+							<script>
+							// script carrousel
+								const images16 = [
+
+								];
+								function chargeimages16() {
+									fetch()
+									images16[images16.length] = image
+								}
+								function changeImage16(direction) {
+									let currentImage = document.getElementById("images16").src;
+									let currentIndex = images16.indexOf(currentImage);
+									let newIndex = (currentIndex + direction + images16.length) % images16.length;
+									document.getElementById("images16").src = images16[newIndex];
+								}	
+								// reset image
+								function resetimage16(){
+									document.getElementById("images16").src = images16[0];
+								}
+							</script>
+						</ul>
+				</li>
+
 			</ul>
 
 			<!-- bas de page -->
