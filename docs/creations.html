@@ -261,7 +261,7 @@
 				</li>
 
 				<li id="crea16">
-						<ul id="carr" onmouseleave="resetimage16(1)" onload="chargeimages16(1)">
+						<ul id="carr" onmouseleave="resetimage16(1)">
 
 							<li><img id="images16" 
 							src="https://snood-design.com/portfolio/creations/16-mind-it/affiche1.jpg" ></li>
@@ -286,12 +286,10 @@
 							<script>
 							// script carrousel
 								const images16 = [
-
+									"https://snood-design.com/portfolio/creations/16-mind-it/affiche1.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/affiche2.jpg"
 								];
-								function chargeimages16() {
-									fetch()
-									images16[images16.length] = image
-								}
+					
 								function changeImage16(direction) {
 									let currentImage = document.getElementById("images16").src;
 									let currentIndex = images16.indexOf(currentImage);
