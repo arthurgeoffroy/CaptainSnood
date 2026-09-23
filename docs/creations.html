@@ -287,7 +287,19 @@
 							// script carrousel
 								const images16 = [
 									"https://snood-design.com/portfolio/creations/16-mind-it/affiche1.jpg",
-									"https://snood-design.com/portfolio/creations/16-mind-it/affiche2.jpg"
+									"https://snood-design.com/portfolio/creations/16-mind-it/affiche2.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/affiche3.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/flyer1.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/flyer2.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/flyer3.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/mind-it-site-1.png",
+									"https://snood-design.com/portfolio/creations/16-mind-it/mind-it-site-2.png",
+									"https://snood-design.com/portfolio/creations/16-mind-it/mind-it-site-3.png",
+									"https://snood-design.com/portfolio/creations/16-mind-it/mind-it-site-4.png",
+									"https://snood-design.com/portfolio/creations/16-mind-it/ordinateur.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/telephone-sondage.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/television.jpg",
+									"https://snood-design.com/portfolio/creations/16-mind-it/tout-support.jpg"
 								];
 					
 								function changeImage16(direction) {
@@ -303,6 +315,54 @@
 							</script>
 						</ul>
 				</li>
+
+				<li id="crea15">
+					<ul id="carr" onmouseleave="resetimage15(1)">
+
+						<li>
+							<video id="video15" autoplay loop muted>
+							<source id="images15" src="https://snood-design.com/portfolio/creations/15-manureva/charte-graphique.png" type="video/mp4">
+							</video>
+						</li>
+
+						<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
+						onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
+						onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-banc.png'" 
+						onclick="changeImage15(-1)">
+
+						<img id="flechedroi" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-droite-blanc.png" 
+						onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-violet.png'" 
+						onmouseout="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-droite-blanc.png'" 
+						onclick="changeImage15(1)">
+
+						<li id="description">
+							<h1> Manureva </h1>
+							<p>date du projet</p>
+							<h3>format du projet</h3>
+							<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
+						</li>
+
+						<script>
+							// script carrousel
+							const images15 = [
+										"https://snood-design.com/portfolio/creations/15-manureva/charte-graphique.png",
+										"https://snood-design.com/portfolio/creations/15-manureva/manureva-teaser.mp4",
+							];
+							function changeImage15(direction) {
+								let currentImage = document.getElementById("images15").src;
+								let currentIndex = images15.indexOf(currentImage);
+								let newIndex = (currentIndex + direction + images15.length) % images15.length;
+								document.getElementById("images15").src = images15[newIndex];
+								document.getElementById("video15").load();
+							}	
+							// reset image
+							function resetimage15(){
+								document.getElementById("images15").src = images15[0];
+							}
+						</script>
+					</ul>
+				</li>
+
 
 			</ul>
 
