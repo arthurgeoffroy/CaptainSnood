@@ -6,7 +6,7 @@
 				color: #f6f5f8;
 				margin: 0px;
 				border-width: 0px 100px;
-				border-color: rgba(69, 66, 74, 1);
+				border-color: rgba(51, 48, 56, 1);
 				border-style: solid;
 				background-color: rgba(61, 59, 64, 1);
 			}
@@ -292,7 +292,7 @@
 			}
 			
 			#entete {
-				background-color: rgba(51, 48, 56, 1);
+				background-color: rgba(69, 66, 74, 1);
 				margin: 100px 0px 0px 0px;
 				padding: 0px;
 				height: 265px;
