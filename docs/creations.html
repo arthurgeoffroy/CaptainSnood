@@ -155,8 +155,9 @@
 				<li id="crea19">
 						<ul id="carr" onmouseleave="resetimage19(1)">
 
-							<li><img id="images19" 
-							src="https://snood-design.com/portfolio/creations/19-illustration-plage/moi-plage.png" ></li>
+							<li>
+								<img id="images19" src="https://snood-design.com/portfolio/creations/19-illustration-plage/moi-plage.png" >
+							</li>
 
 							<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
 							onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
@@ -263,8 +264,9 @@
 				<li id="crea16">
 						<ul id="carr" onmouseleave="resetimage16(1)">
 
-							<li><img id="images16" 
-							src="https://snood-design.com/portfolio/creations/16-mind-it/affiche1.jpg" ></li>
+							<li>
+								<img id="images16" src="https://snood-design.com/portfolio/creations/16-mind-it/affiche1.jpg">
+							</li>
 
 							<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
 							onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
@@ -299,7 +301,7 @@
 									"https://snood-design.com/portfolio/creations/16-mind-it/ordinateur.jpg",
 									"https://snood-design.com/portfolio/creations/16-mind-it/telephone-sondage.jpg",
 									"https://snood-design.com/portfolio/creations/16-mind-it/television.jpg",
-									"https://snood-design.com/portfolio/creations/16-mind-it/tout-support.jpg"
+									"https://snood-design.com/portfolio/creations/16-mind-it/tout-support.jpg",
 								];
 					
 								function changeImage16(direction) {
@@ -318,8 +320,9 @@
 
 				<li id="crea15">
 					<ul id="carr" onmouseleave="resetimage15(1)">
-						<li><img id="images15" 
-							src="" ></li>
+						<li id="images15">
+							<img src="https://snood-design.com/portfolio/creations/15-manureva/charte-graphique.png">
+						</li>
 
 							<img id="flechegau" src="https://snood-design.com\portfolio\assets\pictos\assets-portfolio-bouton-fleche-gauche-banc.png" 
 							onmouseover="this.src='https://snood-design.com/portfolio/assets/pictos/assets-portfolio-bouton-fleche-gauche-violet.png'" 
@@ -332,7 +335,7 @@
 							onclick="changeImage15(1)">
 
 							<li id="description">
-								<h1> Mind It </h1>
+								<h1> Manuvera </h1>
 								<p>date du projet</p>
 								<h3>format du projet</h3>
 								<p>Retrouvez toutes me créations digitales. Que ce soit de l’animation comme de l’illustration ou encore de la DA 360°. Tout est présent !</p>
@@ -341,18 +344,19 @@
 							<script>
 							// script carrousel
 								const images15 = [
-									
+									'<img src="https://snood-design.com/portfolio/creations/15-manureva/charte-graphique.png">',
+									'<video autoplay muted loop id="images17"><source src="https://snood-design.com/portfolio/creations/15-manureva/manureva-teaser.mp4" type="video/mp4"></video>',
 								];
 					
 								function changeImage15(direction) {
-									let currentImage = document.getElementById("images15").src;
+									let currentImage = document.getElementById("images15").innerHTML;
 									let currentIndex = images15.indexOf(currentImage);
 									let newIndex = (currentIndex + direction + images15.length) % images15.length;
-									document.getElementById("images15").src = images15[newIndex];
+									document.getElementById("images15").innerHTML = images15[newIndex];
 								}	
 								// reset image
 								function resetimage15(){
-									document.getElementById("images15").src = images15[0];
+									document.getElementById("images15").innerHTML = images15[0];
 								}
 							</script>
 					</ul>
