@@ -437,6 +437,10 @@
 				object-fit: contain;
 				width: 500px;
 			}
+			#photos #carr {
+				margin: 10px;
+				background-color: rgba(0, 0, 0, 0);
+			}
 
 			/* page contact */
 
