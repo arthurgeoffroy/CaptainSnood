@@ -430,15 +430,11 @@
 			#photos {
 				display: flex;
 				flex-wrap: wrap;
-			}
-			#photos #carr {
-				width: 500px;
-				height: 500px;
+				justify-content: center;
 			}
 			#photos #carr img {
 				object-fit: contain;
 				width: 500px;
-				height: 500px;
 			}
 
 			/* page contact */
