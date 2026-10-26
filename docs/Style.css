@@ -274,19 +274,6 @@
 				padding: 0px 20px 0px 20px;
 				align-items: center;
 			}
-
-
-
-
-
-
-			/*page création*/
-		
-
-
-
-
-
 			#logo3 {
 				width: 400px;
 			}
@@ -299,9 +286,25 @@
 				display: flex;
 				flex-wrap: wrap;
 				flex-direction: column;
-				align-content: center;
+				align-content: flex-start;
 				justify-content: center;
 			}
+			#entete p {
+				max-width: 1000px;
+			}
+
+
+
+
+
+			/*page création*/
+		
+
+
+
+
+
+
 			#Creations {
 				display: grid;
 				justify-content: center;
